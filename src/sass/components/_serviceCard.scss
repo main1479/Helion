@@ -1,0 +1,15 @@
+.service__card{
+   background: #fff;
+   padding: 3.3rem 2.5rem;
+   border-radius: 2.5rem;
+   box-shadow: 0 10px 20px rgba(127, 118, 249, .1);
+   min-height: 50rem;
+   margin-bottom: 5rem;
+
+   @media only screen and (max-width: $tab-land){
+      min-height: 40rem;
+   }
+   @media only screen and (max-width: $tab-land){
+      min-height: 35rem;
+   }
+}

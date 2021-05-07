@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+
+	& a:hover {
+		text-decoration: none;
+	}
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	@media only screen and(max-width: $laptop-land) {
+		font-size: 57%;
+	}
+	@media only screen and(max-width: $laptop-port) {
+		font-size: 50%;
+	}
+}
+
+body {
+	font-family: $font-primary;
+	font-size: 1.6rem;
+	color: $color-text;
+	line-height: 1.6;
+	overflow-x: hidden;
+
+	@media only screen and (max-width: $tab-land){
+		br{
+			display: none !important;
+		}
+	}
+}
+
+.container {
+	max-width: 1400px;
+}
+
+::selection {
+	background: $color-heading;
+	color: #fff;
+}
+
+// ================================
+
+ul {
+	margin: 0;
+}

@@ -1,0 +1,43 @@
+.btn {
+	cursor: pointer;
+	font-size: 1.6rem;
+	border-radius: 0.7rem;
+	border: 0;
+	&__text {
+		background: none;
+
+		&-underline {
+			text-decoration: underline;
+		}
+		@media only screen and(max-width: $laptop-land) {
+			color: $color-heading;
+		}
+	}
+
+	&__primary{
+		padding: 1.8rem 4rem;
+		background: linear-gradient(90deg, $color-primary, $color-primary-light);
+		color: #fff;
+		font-size: 1.7rem;
+		&:hover{
+			filter: hue-rotate(15deg);
+			color: #fff;
+		}
+	}
+
+	&__secondary {
+		background: $color-secondary;
+		color: $color-heading;
+		padding: 1.2rem 2.5rem;
+		&:hover {
+			background: $color-heading;
+			color: #fff;
+		}
+	}
+
+	&.rounded{
+		border-radius: 100px !important;
+	}
+
+
+}

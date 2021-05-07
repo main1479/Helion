@@ -1,0 +1,42 @@
+.step__card {
+	padding: 3.3rem 3.8rem;
+	border-radius: 2.5rem;
+	box-shadow: 0 0 20px rgba(127, 118, 249, 0.1);
+	background: #fff;
+   margin-bottom: 3rem;
+
+	&-pill {
+		display: inline-block;
+		padding: 1.2rem 2.5rem;
+		// background: rgba($color-heading, .5);
+		// color: #fff;
+		font-size: 1.8rem;
+		font-weight: bold;
+		border-radius: 100px;
+	}
+
+	&-1 {
+		.pill {
+			color: $color-step1;
+			background: $color-step1-bg;
+		}
+	}
+	&-2 {
+		.pill {
+			color: $color-step2;
+			background: $color-step2-bg;
+		}
+	}
+	&-3 {
+		.pill {
+			color: $color-step3;
+			background: $color-step3-bg;
+		}
+	}
+	&-4 {
+		.pill {
+			color: $color-step4;
+			background: $color-step4-bg;
+		}
+	}
+}

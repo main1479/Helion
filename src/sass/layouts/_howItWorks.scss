@@ -1,0 +1,13 @@
+.how-it-works{
+   padding: 8rem 0;
+   background: #FBFBFB;
+
+   .step__list{
+      &-item{
+         margin-bottom: .5rem;
+         svg{
+            fill: $color-step2;
+         }
+      }
+   }
+}

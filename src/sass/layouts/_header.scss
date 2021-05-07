@@ -1,0 +1,115 @@
+.header {
+	position: relative;
+	min-height: 100vh;
+	padding-top: 3.5rem;
+	padding-bottom: 5rem;
+	@media only screen and(max-width: $laptop-land) {
+		background: #e8ffed;
+	}
+	.container {
+		max-width: 1631px;
+	}
+
+	.nav {
+		margin-bottom: 10rem;
+
+		@media only screen and (max-width: $mbl-land){
+			.logo{
+				margin-right: 3rem;
+			}
+		}
+
+		@media only screen and (max-width: $laptop-land) {
+			.nav__menu {
+				position: fixed;
+				width: 50%;
+				height: 100vh;
+				right: 0;
+				top: 0;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				background: $color-secondary;
+				padding-left: 50px;
+				transform: translateX(100%);
+				transition: 0.5s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
+				z-index: 8;
+
+				&-item {
+					margin-bottom: 20px;
+				}
+
+				&-link {
+               font-size: 2.2rem;
+					color: $color-heading;
+				}
+			}
+		}
+
+		@media only screen and (max-width: $tab-port) {
+			.nav__menu {
+				width: 80%;
+			}
+		}
+		@media only screen and (max-width: $mbl-small) {
+			.nav__menu {
+				width: 100%;
+			}
+		}
+
+		&.active {
+			.nav__menu {
+				transform: translateX(0) !important;
+			}
+			.hamburger--spring .hamburger-inner {
+				transition-delay: 0.22s;
+				background-color: transparent !important;
+			}
+			.hamburger--spring .hamburger-inner::before {
+				top: 0;
+				transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+					transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+				transform: translate3d(0, 10px, 0) rotate(45deg);
+			}
+			.hamburger--spring .hamburger-inner::after {
+				top: 0;
+				transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+					transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+				transform: translate3d(0, 10px, 0) rotate(-45deg);
+			}
+		}
+	}
+
+	// ================================ 
+	// header content area 
+	.laptop__image{
+		transform: scale(1.1);
+		transform-origin: left top;
+
+		@media only screen and (max-width:1800px){
+			transform: scale(1);
+			transform-origin: center center;
+			margin: 0 auto;
+		}
+	}
+
+
+
+
+
+
+
+
+}
+img.header-bg {
+	position: absolute;
+	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	max-height: 97rem;
+	z-index: -1;
+}

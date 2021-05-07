@@ -1,0 +1,93 @@
+.heading {
+	color: $color-heading;
+}
+.text {
+	color: $color-heading;
+}
+.text__primary {
+	color: $color-primary;
+}
+.text__secondary {
+	color: $color-text;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+.bold {
+	font-weight: bold;
+}
+
+h1.heading {
+	font-size: 5.5rem;
+	font-weight: bold;
+	letter-spacing: -0.2px;
+
+	@media only screen and (max-width: 1550px) {
+		font-size: 5rem;
+		letter-spacing: 0;
+	}
+	@media only screen and (max-width: $tab-port) {
+		font-size: 4rem;
+		letter-spacing: 0.5px;
+	}
+	@media only screen and (max-width: $mbl-port) {
+		font-size: 3.6rem;
+	}
+}
+h2.heading {
+	font-size: 5.5rem;
+	&.small {
+		font-size: 4rem;
+      line-height: 1.4;
+	}
+	@media only screen and (max-width: $tab-land) {
+		font-size: 5rem;
+		&.small {
+			font-size: 3.5rem;
+		}
+	}
+	@media only screen and (max-width: $tab-port) {
+		font-size: 4rem;
+      &.small {
+			font-size: 3rem;
+		}
+	}
+	@media only screen and (max-width: $mbl-port) {
+		font-size: 3.6rem;
+      &.small {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+h3.heading {
+	font-size: 2.6rem;
+}
+h4.heading {
+	font-size: 2rem;
+}
+
+p.p__text {
+	font-size: 1.8rem;
+
+	&-big {
+		font-size: 2.6rem;
+	}
+
+   &-mid{
+      font-size: 2rem;
+   }
+
+	@media only screen and (max-width: $mbl-land) {
+		&-big {
+			font-size: 2.2rem;
+		}
+	}
+}

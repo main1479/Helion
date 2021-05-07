@@ -1,0 +1,46 @@
+.nav {
+   .nav__container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+
+	.left,
+	.right {
+		display: flex;
+		align-items: center;
+	}
+	&__menu {
+		display: flex;
+		align-items: center;
+		margin-left: 5rem;
+		@media only screen and(max-width: 1350px){
+			margin-left: 3rem;
+		}
+		&-item {
+			&:not(:last-child) {
+				margin-right: 3.5rem;
+			}
+
+			@media only screen and(max-width: 1350px){
+				&:not(:last-child) {
+				margin-right: 2.5rem;
+			}
+			}
+		}
+
+		
+
+		&-link {
+			font-size: 1.6rem;
+			color: $color-heading;
+         transition: all .3s;
+         &.active,
+         &:hover{
+            color: $color-heading;
+            -webkit-text-stroke: .5px currentColor;
+         }
+		}
+	}
+}

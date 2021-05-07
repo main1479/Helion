@@ -1,0 +1,37 @@
+// ==============================
+// Colors
+// ==============================
+$color-primary: #00b034;
+$color-primary-light: #7cc424;
+$color-secondary: #ffcc00;
+$color-heading: #303c46;
+$color-text: #7f879e;
+// Steps Colors
+$color-step1: #0088ff;
+$color-step1-bg: #e5f3ff;
+$color-step2: #a300ff;
+$color-step2-bg: #f0e5ff;
+$color-step3: #00c140;
+$color-step3-bg: #e5ffec;
+$color-step4: #ff9900;
+$color-step4-bg: #fff5e5;
+
+
+// =============================================
+// Fonts
+// =============================================
+$font-primary: 'HelveticaNowDisplay', sans-serif;
+
+
+// ============================================
+// Breakpoints
+// ============================================
+
+$laptop-land: 75em; //1200px / 16px = 75em
+$laptop-port: 64em; //1024px / 16px = 64em
+$tab-land: 62em; //992px / 16px = 62em
+$tab-port: 48em; //768px / 16px = 48em
+$mbl-land: 35.9375em; //575px / 16px = 35.9375em
+$mbl-port: 30em; //480px / 16px = 30em
+$mbl-small: 23.75em; //380px / 16px = 23.75em
+
