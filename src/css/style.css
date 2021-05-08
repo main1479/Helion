@@ -613,6 +613,11 @@ img.header-bg {
 .footer {
   padding: 4rem 0;
   background: #f9f9fb; }
+  .footer__container {
+    max-width: 1631px; }
+  .footer .nav {
+    display: flex;
+    justify-content: flex-end; }
 
 .btn {
   cursor: pointer;

@@ -1,4 +1,15 @@
 .footer{
    padding: 4rem 0;
    background: #f9f9fb;
+
+   &__container{
+      max-width: 1631px;
+
+      
+   }
+
+   .nav{
+      display: flex;
+      justify-content: flex-end;
+   }
 }
