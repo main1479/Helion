@@ -335,6 +335,7 @@ body {
       display: none !important; } }
 
 .container {
+  width: 97%;
   max-width: 1400px; }
 
 ::selection {
@@ -354,32 +355,38 @@ ul {
     .header {
       background: #e8ffed; } }
   .header .container {
+    width: 97%;
     max-width: 1631px; }
   .header .nav {
     margin-bottom: 10rem; }
+    @media only screen and (max-width: 1500px) {
+      .header .nav .logo {
+        max-width: 12rem; } }
     @media only screen and (max-width: 35.9375em) {
       .header .nav .logo {
         margin-right: 3rem; } }
     @media only screen and (max-width: 75em) {
-      .header .nav .nav__menu {
-        position: fixed;
-        width: 50%;
-        height: 100vh;
-        right: 0;
-        top: 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        background: #ffcc00;
-        padding-left: 50px;
-        transform: translateX(100%);
-        transition: 0.5s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
-        z-index: 8; }
-        .header .nav .nav__menu-item {
-          margin-bottom: 20px; }
-        .header .nav .nav__menu-link {
-          font-size: 2.2rem;
-          color: #303c46; } }
+      .header .nav {
+        margin-bottom: 5rem; }
+        .header .nav .nav__menu {
+          position: fixed;
+          width: 50%;
+          height: 100vh;
+          right: 0;
+          top: 0;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          background: #ffcc00;
+          padding-left: 50px;
+          transform: translateX(100%);
+          transition: 0.5s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
+          z-index: 8; }
+          .header .nav .nav__menu-item {
+            margin-bottom: 20px; }
+          .header .nav .nav__menu-link {
+            font-size: 2.2rem;
+            color: #303c46; } }
     @media only screen and (max-width: 48em) {
       .header .nav .nav__menu {
         width: 80%; } }
@@ -423,11 +430,17 @@ img.header-bg {
 .services {
   padding-top: 8rem;
   padding-bottom: 5rem; }
+  @media only screen and (max-width: 48em) {
+    .services {
+      padding-top: 3rem; } }
 
 .cradit-facts {
   padding-top: 8rem;
   padding-bottom: 5rem;
   position: relative; }
+  @media only screen and (max-width: 48em) {
+    .cradit-facts {
+      padding-top: 3rem; } }
   .cradit-facts .fact__list {
     padding-right: 8rem; }
     .cradit-facts .fact__list-item svg {
@@ -687,7 +700,9 @@ img.header-bg {
   border-radius: 2.5rem;
   box-shadow: 0 0 20px rgba(127, 118, 249, 0.1);
   background: #fff;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  transition: all .3s;
+  cursor: pointer; }
   .step__card-pill {
     display: inline-block;
     padding: 1.2rem 2.5rem;
@@ -706,6 +721,9 @@ img.header-bg {
   .step__card-4 .pill {
     color: #ff9900;
     background: #fff5e5; }
+  .step__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(127, 118, 249, 0.15); }
 
 .nav {
   transition: all 0.4s; }
@@ -767,13 +785,23 @@ img.header-bg {
   border-radius: 2.5rem;
   box-shadow: 0 10px 20px rgba(127, 118, 249, 0.1);
   min-height: 50rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  transition: all .3s;
+  cursor: pointer; }
   @media only screen and (max-width: 62em) {
     .service__card {
       min-height: 40rem; } }
   @media only screen and (max-width: 62em) {
     .service__card {
       min-height: 35rem; } }
+  .service__card-img {
+    max-width: 10rem;
+    transition: all .3s; }
+  .service__card:hover {
+    box-shadow: 0 15px 80px rgba(127, 118, 249, 0.1);
+    transform: translateY(-5px); }
+    .service__card:hover .service__card-img {
+      transform: scale(1.1); }
 
 .testimonial__card {
   padding: 5rem;
@@ -938,7 +966,7 @@ ul.list li {
     background: #fff;
     padding: 3rem 3.5rem;
     position: relative;
-    transition: all .5s; }
+    transition: all 0.5s; }
     .accordion__item-title svg {
       min-width: 3rem;
       min-height: 3rem;
@@ -966,7 +994,7 @@ ul.list li {
   .accordion__item-desc {
     margin-top: 2rem;
     font-size: 2rem;
-    transition: all .5s;
+    transition: all 0.5s;
     position: absolute;
     transform: scaleY(0);
     opacity: 0;

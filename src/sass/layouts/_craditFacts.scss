@@ -2,6 +2,9 @@
    padding-top: 8rem;
    padding-bottom: 5rem;
    position: relative;
+   @media only screen and (max-width: $tab-port){
+      padding-top: 3rem;
+   }
    .fact__list{
       padding-right: 8rem;
 

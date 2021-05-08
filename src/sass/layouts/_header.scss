@@ -7,19 +7,26 @@
 		background: #e8ffed;
 	}
 	.container {
+		width: 97%;
 		max-width: 1631px;
 	}
 
 	.nav {
 		margin-bottom: 10rem;
 
-		@media only screen and (max-width: $mbl-land){
-			.logo{
+		@media only screen and (max-width: 1500px) {
+			.logo {
+				max-width: 12rem;
+			}
+		}
+		@media only screen and (max-width: $mbl-land) {
+			.logo {
 				margin-right: 3rem;
 			}
 		}
 
 		@media only screen and (max-width: $laptop-land) {
+			margin-bottom: 5rem;
 			.nav__menu {
 				position: fixed;
 				width: 50%;
@@ -40,7 +47,7 @@
 				}
 
 				&-link {
-               font-size: 2.2rem;
+					font-size: 2.2rem;
 					color: $color-heading;
 				}
 			}
@@ -80,26 +87,18 @@
 		}
 	}
 
-	// ================================ 
-	// header content area 
-	.laptop__image{
+	// ================================
+	// header content area
+	.laptop__image {
 		transform: scale(1.1);
 		transform-origin: left top;
 
-		@media only screen and (max-width:1800px){
+		@media only screen and (max-width: 1800px) {
 			transform: scale(1);
 			transform-origin: center center;
 			margin: 0 auto;
 		}
 	}
-
-
-
-
-
-
-
-
 }
 img.header-bg {
 	position: absolute;

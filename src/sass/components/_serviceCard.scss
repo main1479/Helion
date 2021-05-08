@@ -5,11 +5,27 @@
    box-shadow: 0 10px 20px rgba(127, 118, 249, .1);
    min-height: 50rem;
    margin-bottom: 5rem;
+   transition: all .3s;
+   cursor: pointer;
 
    @media only screen and (max-width: $tab-land){
       min-height: 40rem;
    }
    @media only screen and (max-width: $tab-land){
       min-height: 35rem;
+   }
+
+   &-img{
+      max-width: 10rem;
+      transition: all .3s;
+   }
+
+   &:hover{
+      box-shadow: 0 15px 80px rgba(127, 118, 249, .1);
+      transform: translateY(-5px);
+
+      .service__card-img{
+         transform: scale(1.1);
+      }
    }
 }

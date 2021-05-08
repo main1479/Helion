@@ -66,8 +66,7 @@ const accordionTitles = $all('.accordion__item-title');
 
 accordionTitles.forEach(btn => {
 	btn.addEventListener('click', function(){
-		accordionItems.forEach(item => item.classList.remove('active'));
-		this.closest('.accordion__item').classList.add('active');
+		this.closest('.accordion__item').classList.toggle('active');
 	})
 })
 

@@ -4,6 +4,8 @@
 	box-shadow: 0 0 20px rgba(127, 118, 249, 0.1);
 	background: #fff;
    margin-bottom: 3rem;
+	transition: all .3s;
+	cursor: pointer;
 
 	&-pill {
 		display: inline-block;
@@ -38,5 +40,10 @@
 			color: $color-step4;
 			background: $color-step4-bg;
 		}
+	}
+
+	&:hover{
+		transform: translateY(-5px);
+		box-shadow: 0 10px 40px rgba(127, 118, 249, 0.15);
 	}
 }

@@ -8,7 +8,7 @@
 		background: #fff;
 		padding: 3rem 3.5rem;
 		position: relative;
-      transition: all .5s;
+		transition: all 0.5s;
 
 		&-title {
 			svg {
@@ -51,11 +51,11 @@
 	&__item-desc {
 		margin-top: 2rem;
 		font-size: 2rem;
-		transition: all .5s;
+		transition: all 0.5s;
 		position: absolute;
 		transform: scaleY(0);
 		opacity: 0;
 		visibility: hidden;
-      transform-origin: top center;
+		transform-origin: top center;
 	}
 }
