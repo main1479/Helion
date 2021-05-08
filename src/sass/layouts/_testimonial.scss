@@ -1,0 +1,26 @@
+.testimonial{
+   padding: 8rem 0;
+
+   .rating__wrapper{
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width:$mbl-land){
+         justify-content: center;
+      }
+      .rating{
+         &:not(:last-child){
+            margin-right: 0.4rem;
+         }
+         svg{
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: $color-secondary;
+         }
+      }
+
+      p.p__text{
+         margin-left: 1.5rem;
+
+      }
+   }
+}

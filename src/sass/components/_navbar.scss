@@ -1,10 +1,41 @@
 .nav {
-   .nav__container{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-   }
+	transition: all 0.4s;
+	.nav__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
+	@media only screen and (max-width: $mbl-land) {
+		.logo {
+			max-width: 10rem;
+		}
+	}
+
+	&.sticky {
+		position: fixed;
+		padding: 1.5rem 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 99;
+		background: #fff;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+		.logo {
+			max-width: 12rem;
+		}
+
+		.btn__text.white {
+			color: $color-heading;
+		}
+
+		@media only screen and (max-width: $mbl-land) {
+			.logo {
+				max-width: 8rem;
+			}
+		}
+	}
 
 	.left,
 	.right {
@@ -15,7 +46,7 @@
 		display: flex;
 		align-items: center;
 		margin-left: 5rem;
-		@media only screen and(max-width: 1350px){
+		@media only screen and(max-width: 1350px) {
 			margin-left: 3rem;
 		}
 		&-item {
@@ -23,24 +54,22 @@
 				margin-right: 3.5rem;
 			}
 
-			@media only screen and(max-width: 1350px){
+			@media only screen and(max-width: 1350px) {
 				&:not(:last-child) {
-				margin-right: 2.5rem;
-			}
+					margin-right: 2.5rem;
+				}
 			}
 		}
-
-		
 
 		&-link {
 			font-size: 1.6rem;
 			color: $color-heading;
-         transition: all .3s;
-         &.active,
-         &:hover{
-            color: $color-heading;
-            -webkit-text-stroke: .5px currentColor;
-         }
+			transition: all 0.3s;
+			&.active,
+			&:hover {
+				color: $color-heading;
+				-webkit-text-stroke: 0.5px currentColor;
+			}
 		}
 	}
 }

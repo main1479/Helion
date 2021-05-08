@@ -24,6 +24,16 @@
 			color: #fff;
 		}
 	}
+	&__icon{
+		
+		svg{
+			width: 2rem;
+			height: 1.3rem;
+			margin-left: 2rem;
+			transition: all .3s;
+		}
+
+	}
 
 	&__secondary {
 		background: $color-secondary;
@@ -39,5 +49,19 @@
 		border-radius: 100px !important;
 	}
 
+	&__allReview{
+		padding: 1.8rem 7rem;
+
+		&:hover{
+			svg{
+				transform: translateX(10px);
+			}
+		}
+	}
+
+	&__fullWidth{
+		padding: 1.2rem 5rem;
+		box-shadow: 0 10px 30px rgba($color-primary-light, .5);
+	}
 
 }

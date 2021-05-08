@@ -1,0 +1,21 @@
+.work-with-us{
+   position: relative;
+   padding: 8rem 0;
+   margin-bottom: 4rem;
+   background: url(../img/start-working-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+
+   .work-with-img{
+      position: absolute;
+      bottom: -8rem;
+
+      @media only screen and (max-width: $tab-port){
+         position: relative;
+         bottom: inherit;
+         margin: 0 auto;
+         margin-bottom: 4rem;
+      }
+   }
+}

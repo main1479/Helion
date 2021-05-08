@@ -1,0 +1,71 @@
+.testimonial__card {
+	padding: 5rem;
+	border-radius: 2.2rem;
+	transition: all 0.5s;
+	min-height: 51.7rem;
+	margin-bottom: 4rem;
+	transition: all 0.3s;
+	@media only screen and (max-width: $mbl-land) {
+		padding: 3rem;
+      min-height: 42rem;
+	}
+	&-img {
+		width: 7.8rem;
+		height: 7.8rem;
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	p.p__text {
+		line-height: 1.4;
+	}
+
+	&:hover {
+		box-shadow: 5px 20px 50px rgba($color-primary, 0.2);
+		p.p__text {
+			color: #fff;
+		}
+	}
+
+	&-1 {
+		background: linear-gradient(90deg, transparent, transparent), url(../img/testimonial1.png);
+		@include cardBg;
+		&:hover {
+			background: linear-gradient(90deg, $color-primary, $color-primary-light),
+				url(../img/testimonial1.png);
+			@include cardBg;
+		}
+	}
+	&-2 {
+		background: linear-gradient(90deg, transparent, transparent), url(../img/testimonial2.png);
+		@include cardBg;
+		&:hover {
+			background: linear-gradient(90deg, $color-primary, $color-primary-light),
+				url(../img/testimonial2.png);
+			@include cardBg;
+		}
+	}
+	&-3 {
+		background: linear-gradient(90deg, transparent, transparent), url(../img/testimonial3.png);
+		@include cardBg;
+		&:hover {
+			background: linear-gradient(90deg, $color-primary, $color-primary-light),
+				url(../img/testimonial3.png);
+			@include cardBg;
+		}
+	}
+	&-4 {
+		background: linear-gradient(90deg, transparent, transparent), url(../img/testimonial4.png);
+		@include cardBg;
+		&:hover {
+			background: linear-gradient(90deg, $color-primary, $color-primary-light),
+				url(../img/testimonial4.png);
+			@include cardBg;
+		}
+	}
+}

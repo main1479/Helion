@@ -1,0 +1,111 @@
+.connect {
+	padding-top: 10rem;
+	border-top: 1px solid #c7c7c9;
+	border-bottom: 1px solid #c7c7c9;
+	&__container {
+		max-width: 1631px;
+	}
+
+	&__list {
+		&-item {
+			a {
+				display: flex;
+				align-items: center;
+				font-size: 2rem;
+				color: $color-heading;
+				svg {
+					min-width: 2.5rem !important;
+					min-height: 2.5rem !important;
+					max-width: 2.5rem !important;
+					max-height: 2.5rem !important;
+				}
+			}
+		}
+
+		@media only screen and (max-width: $tab-port) {
+			text-align: center;
+			&-item {
+				text-align: center;
+				a {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+	// =================================
+	// social phone box
+
+	.phone__box {
+		position: relative;
+		min-height: 46rem;
+		padding: 6rem;
+
+		&-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		.social__box {
+			padding: 4rem;
+			border: 1px solid #e6e6e6;
+			border-radius: 1.1rem;
+			display: block;
+			transition: all 0.3s;
+			p.p__text {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				svg {
+					width: 2rem;
+					height: 2rem;
+					transition: all 0.3s;
+				}
+			}
+
+			&:hover {
+				background: $color-heading;
+				p.p__text {
+					color: #fff;
+				}
+				svg {
+					transform: translateX(10px);
+					fill: #fff;
+				}
+			}
+
+			@media only screen and (max-width: $laptop-port) {
+				padding: 2rem;
+			}
+		}
+
+		@media only screen and (max-width: 1500px) {
+			padding: 4rem;
+		}
+	}
+
+
+
+   // ==================================
+   // footer nav
+   .nav__container{
+      border-top: 1px solid #c7c7c9;
+      margin-top: 4rem;
+      padding: 3rem 1.5rem;
+
+      @media only screen and (max-width: $tab-land){
+         .logo{
+            max-width: 10rem;
+         }
+      }
+      @media only screen and (max-width: $tab-port){
+         .right{
+            display: none;
+         }
+      }
+   }
+}

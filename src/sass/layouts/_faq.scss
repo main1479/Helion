@@ -1,0 +1,66 @@
+.section__faq {
+	padding: 10rem 0;
+	position: relative;
+
+	.faq__container {
+		max-width: 90rem;
+      position: relative;
+	}
+
+	.faq__tab {
+		border: 1px solid #f3f3f3;
+		padding: 1.4rem 2.5rem;
+		margin: 0 1rem;
+      font-size: 1.7rem;
+
+		&--active {
+			background: linear-gradient(90deg, $color-primary, $color-primary-light);
+			color: #fff;
+			border-color: transparent;
+			box-shadow: 0 5px 20px rgba($color-primary-light, 0.3);
+			&:hover {
+				filter: hue-rotate(15deg);
+				color: #fff;
+			}
+		}
+
+      @media only screen and (max-width: $mbl-land){
+         padding: 1rem 1.5rem;
+         margin: 0 .5rem;
+      }
+	}
+
+	// ================================
+	// tabs
+	// ================================
+	.faq{
+		position: relative;
+	}
+	.faq__tab-container {
+		display: flex;
+		justify-content: center;
+	}
+
+
+	.faq__content {
+		/* display: none; */
+		opacity: 0;
+      visibility: hidden;
+		transform: translateX(100px);
+		/* JUST PRESENTATIONAL */
+		font-size: 1.7rem;
+		padding-right: 5rem;
+		transition: all 0.5s;
+		// display: none;
+      width: 100%;
+		position: absolute;
+	}
+
+	.faq__content--active {
+		// display: block;
+		transform: translateX(0);
+		opacity: 1;
+      visibility: visible;
+		position: relative;
+	}
+}
