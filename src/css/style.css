@@ -534,7 +534,8 @@ img.header-bg {
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
-    position: relative; }
+    position: relative;
+    padding-right: 0; }
 
 .connect {
   padding-top: 10rem;
@@ -933,8 +934,10 @@ ul.list li {
     position: relative;
     transition: all .5s; }
     .accordion__item-title svg {
-      width: 3rem;
-      height: 3rem;
+      min-width: 3rem;
+      min-height: 3rem;
+      max-width: 3rem;
+      max-height: 3rem;
       transition: all 0.3s; }
     .accordion__item.active .accordion__item-title svg {
       transform: rotate(45deg); }
