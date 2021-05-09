@@ -323,6 +323,9 @@ html {
   @media only screen and (max-width: 64em) {
     html {
       font-size: 50%; } }
+  @media only screen and (min-width: 1202px) and (max-width: 1500px) {
+    html {
+      font-size: 47%; } }
 
 body {
   font-family: "HelveticaNowDisplay", sans-serif;
@@ -335,8 +338,11 @@ body {
       display: none !important; } }
 
 .container {
-  width: 97%;
+  width: 95%;
   max-width: 1400px; }
+  @media only screen and (min-width: 1202px) and (max-width: 1500px) {
+    .container {
+      width: 90%; } }
 
 ::selection {
   background: #303c46;
@@ -355,7 +361,6 @@ ul {
     .header {
       background: #e8ffed; } }
   .header .container {
-    width: 97%;
     max-width: 1631px; }
   .header .nav {
     margin-bottom: 10rem; }

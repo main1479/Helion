@@ -21,6 +21,10 @@ html {
 	@media only screen and(max-width: $laptop-port) {
 		font-size: 50%;
 	}
+
+	@media only screen and (min-width: 1202px) and (max-width: 1500px){
+		font-size: 47%;
+	}
 }
 
 body {
@@ -38,8 +42,11 @@ body {
 }
 
 .container {
-	width: 97%;
+	width: 95%;
 	max-width: 1400px;
+	@media only screen and (min-width: 1202px) and (max-width: 1500px){
+		width: 90%;
+	}
 }
 
 ::selection {
