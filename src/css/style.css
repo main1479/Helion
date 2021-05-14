@@ -1017,7 +1017,7 @@ ul.list li {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s;
+  transition: all 0.5s;
   transform: scale(0);
   opacity: 0;
   visibility: hidden;
@@ -1050,10 +1050,13 @@ ul.list li {
     font-weight: 100;
     font-family: sans-serif; }
   .popup .embed-responsive {
-    border-radius: 10px; }
+    border-radius: 10px;
+    display: none; }
   .popup.active {
     transform: scale(1);
     opacity: 1;
     visibility: visible; }
     .popup.active .popup__container {
+      display: block; }
+    .popup.active .embed-responsive {
       display: block; }

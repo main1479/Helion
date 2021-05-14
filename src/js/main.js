@@ -47,36 +47,44 @@ tabContainer.addEventListener('click', function (e) {
 
 	// removeing active classes
 	tabs.forEach((tab) => tab.classList.remove('faq__tab--active'));
-	tabContent.forEach((tab) =>
-		tab.classList.remove('faq__content--active')
-	);
+	tabContent.forEach((tab) => tab.classList.remove('faq__content--active'));
 
 	// activate tabs
 	clicked.classList.add('faq__tab--active');
-	$(`.faq__content--${clicked.dataset.tab}`).classList.add(
-		'faq__content--active'
-	);
+	$(`.faq__content--${clicked.dataset.tab}`).classList.add('faq__content--active');
 });
 
-
-// accordion 
+// accordion
 
 const accordionItems = $all('.accordion__item');
 const accordionTitles = $all('.accordion__item-title');
 
-accordionTitles.forEach(btn => {
-	btn.addEventListener('click', function(){
+accordionTitles.forEach((btn) => {
+	btn.addEventListener('click', function () {
 		this.closest('.accordion__item').classList.toggle('active');
-	})
-})
-
+	});
+});
 
 // popup
-const popupTrigger = document.querySelectorAll('.popup__trigger')
+const popupTrigger = document.querySelectorAll('.popup__trigger');
 const popup = document.querySelector('.popup');
+const popupContainer = document.querySelector('.popup__container');
 
-popupTrigger.forEach(btn => {
+const videoMarkup = `<div class="embed-responsive embed-responsive-16by9">
+					<iframe
+						class="embed-responsive-item"
+						src="https://www.youtube.com/embed/TpwpAYi-p2w"
+						allowfullscreen
+					></iframe>
+				</div>`;
+
+popupTrigger.forEach((btn) => {
 	btn.addEventListener('click', function () {
-		popup.classList.toggle('active')
+		popup.classList.toggle('active');
+		if (popup.classList.contains('active')) {
+			popupContainer.insertAdjacentHTML('afterbegin', videoMarkup);
+		}else{
+			popupContainer.innerHTML = '';
+		}
 	});
-})
+});
