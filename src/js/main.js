@@ -70,10 +70,13 @@ const popupTrigger = document.querySelectorAll('.popup__trigger');
 const popup = document.querySelector('.popup');
 const popupContainer = document.querySelector('.popup__container');
 
+// if you want to change the video just replace the url
+const videoUrl = 'https://www.youtube.com/embed/TpwpAYi-p2w';
+
 const videoMarkup = `<div class="embed-responsive embed-responsive-16by9">
 					<iframe
 						class="embed-responsive-item"
-						src="https://www.youtube.com/embed/TpwpAYi-p2w"
+						src="${videoUrl}"
 						allowfullscreen
 					></iframe>
 				</div>`;
