@@ -70,3 +70,13 @@ accordionTitles.forEach(btn => {
 	})
 })
 
+
+// popup
+const popupTrigger = document.querySelectorAll('.popup__trigger')
+const popup = document.querySelector('.popup');
+
+popupTrigger.forEach(btn => {
+	btn.addEventListener('click', function () {
+		popup.classList.toggle('active')
+	});
+})
