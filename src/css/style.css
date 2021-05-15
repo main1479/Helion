@@ -642,7 +642,8 @@ img.header-bg {
   cursor: pointer;
   font-size: 1.6rem;
   border-radius: 0.7rem;
-  border: 0; }
+  border: 0;
+  text-transform: capitalize; }
   .btn__text {
     background: none; }
     .btn__text-underline {
