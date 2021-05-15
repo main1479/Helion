@@ -646,6 +646,8 @@ img.header-bg {
   text-transform: capitalize; }
   .btn__text {
     background: none; }
+    .btn__text:focus {
+      box-shadow: none !important; }
     .btn__text-underline {
       text-decoration: underline; }
     @media only screen and (max-width: 75em) {
@@ -663,7 +665,7 @@ img.header-bg {
     width: 2rem;
     height: 1.3rem;
     margin-left: 2rem;
-    transition: all .3s; }
+    transition: all 0.3s; }
   .btn__secondary {
     background: #ffcc00;
     color: #303c46;

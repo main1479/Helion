@@ -8,6 +8,19 @@ function $all(selected) {
 	return self;
 }
 
+// menu active class
+const menuLink = $all('.nav__menu-link');
+
+menuLink.forEach(link => {
+	link.addEventListener('click', function(){
+		menuLink.forEach(btn =>{
+			btn.classList.remove('active');
+		});
+
+		this.classList.add('active')
+	})
+})
+
 // Mobile menu
 const navTrigger = $all('.menu__trigger');
 const menu = $('.header .nav');

@@ -4,8 +4,12 @@
 	border-radius: 0.7rem;
 	border: 0;
 	text-transform: capitalize;
+
 	&__text {
 		background: none;
+		&:focus {
+			box-shadow: none !important;
+		}
 
 		&-underline {
 			text-decoration: underline;
@@ -15,25 +19,23 @@
 		}
 	}
 
-	&__primary{
+	&__primary {
 		padding: 1.8rem 4rem;
 		background: linear-gradient(90deg, $color-primary, $color-primary-light);
 		color: #fff;
 		font-size: 1.7rem;
-		&:hover{
+		&:hover {
 			filter: hue-rotate(15deg);
 			color: #fff;
 		}
 	}
-	&__icon{
-		
-		svg{
+	&__icon {
+		svg {
 			width: 2rem;
 			height: 1.3rem;
 			margin-left: 2rem;
-			transition: all .3s;
+			transition: all 0.3s;
 		}
-
 	}
 
 	&__secondary {
@@ -46,23 +48,22 @@
 		}
 	}
 
-	&.rounded{
+	&.rounded {
 		border-radius: 100px !important;
 	}
 
-	&__allReview{
+	&__allReview {
 		padding: 1.8rem 7rem;
 
-		&:hover{
-			svg{
+		&:hover {
+			svg {
 				transform: translateX(10px);
 			}
 		}
 	}
 
-	&__fullWidth{
+	&__fullWidth {
 		padding: 1.2rem 5rem;
-		box-shadow: 0 10px 30px rgba($color-primary-light, .5);
+		box-shadow: 0 10px 30px rgba($color-primary-light, 0.5);
 	}
-
 }
