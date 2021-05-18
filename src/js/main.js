@@ -11,15 +11,15 @@ function $all(selected) {
 // menu active class
 const menuLink = $all('.nav__menu-link');
 
-menuLink.forEach(link => {
-	link.addEventListener('click', function(){
-		menuLink.forEach(btn =>{
+menuLink.forEach((link) => {
+	link.addEventListener('click', function () {
+		menuLink.forEach((btn) => {
 			btn.classList.remove('active');
 		});
 
-		this.classList.add('active')
-	})
-})
+		this.classList.add('active');
+	});
+});
 
 // Mobile menu
 const navTrigger = $all('.menu__trigger');
@@ -84,7 +84,7 @@ const popup = document.querySelector('.popup');
 const popupContainer = document.querySelector('.popup__container');
 
 // if you want to change the video just replace the url
-const videoUrl = 'https://www.youtube.com/embed/TpwpAYi-p2w';
+const videoUrl = 'https://umustsee.net/UAO1MC';
 
 const videoMarkup = `<div class="embed-responsive embed-responsive-16by9">
 					<iframe
@@ -99,8 +99,24 @@ popupTrigger.forEach((btn) => {
 		popup.classList.toggle('active');
 		if (popup.classList.contains('active')) {
 			popupContainer.insertAdjacentHTML('afterbegin', videoMarkup);
-		}else{
+		} else {
 			popupContainer.innerHTML = '';
 		}
 	});
+});
+
+// sub heading text
+const subHeads = document.querySelectorAll('.first__big');
+
+subHeads.forEach((head) => {
+	const text = head.innerHTML;
+	const textArr = text.replace(/(\r\n\t|\n|\r|\t)/gm, '').split(' ');
+	console.log(textArr);
+	const markup = textArr
+		.map((el) => {
+			return `<span class="first__word">${el[0]}</span>${el.slice(1)}`;
+		})
+		.join(' ');
+	head.innerHTML = '';
+	head.insertAdjacentHTML('afterbegin', markup);
 });

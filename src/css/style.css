@@ -239,6 +239,15 @@
 .capitalize {
   text-transform: capitalize; }
 
+.first__word {
+  font-size: 5rem; }
+  @media only screen and (max-width: 62em) {
+    .first__word {
+      font-size: 4.5rem; } }
+  @media only screen and (max-width: 48em) {
+    .first__word {
+      font-size: 4rem; } }
+
 .fw-400 {
   font-weight: 400; }
 
@@ -266,6 +275,8 @@ h2.heading {
   h2.heading.small {
     font-size: 4rem;
     line-height: 1.4; }
+  h2.heading.first__big {
+    text-transform: uppercase; }
   @media only screen and (max-width: 62em) {
     h2.heading {
       font-size: 5rem; }
@@ -1036,7 +1047,7 @@ ul.list li {
     background: rgba(0, 0, 0, 0.397);
     backdrop-filter: blur(2px); }
   .popup__container {
-    max-width: 92rem;
+    max-width: 114rem;
     position: relative;
     z-index: 20;
     display: none; }
