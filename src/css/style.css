@@ -348,6 +348,9 @@ body {
     body br {
       display: none !important; } }
 
+a {
+  color: inherit; }
+
 .container {
   width: 95%;
   max-width: 1400px; }
