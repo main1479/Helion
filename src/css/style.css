@@ -247,6 +247,9 @@
   @media only screen and (max-width: 48em) {
     .first__word {
       font-size: 4rem; } }
+  @media only screen and (max-width: 35.9375em) {
+    .first__word {
+      font-size: 3.5rem; } }
 
 .fw-400 {
   font-weight: 400; }
@@ -692,7 +695,22 @@ img.header-bg {
       transform: translateX(10px); }
   .btn__fullWidth {
     padding: 1.2rem 5rem;
-    box-shadow: 0 10px 30px rgba(124, 196, 36, 0.5); }
+    position: relative; }
+    .btn__fullWidth::after {
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 15px;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, #00b034, #7cc424);
+      filter: blur(15px);
+      -webkit-filter: blur(15px);
+      transition: all 0.3s linear;
+      border-radius: 23px; }
+    .btn__fullWidth:hover::after {
+      opacity: 0; }
 
 .form {
   background: #fff;

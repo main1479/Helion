@@ -111,7 +111,6 @@ const subHeads = document.querySelectorAll('.first__big');
 subHeads.forEach((head) => {
 	const text = head.innerHTML;
 	const textArr = text.replace(/(\r\n\t|\n|\r|\t)/gm, '').split(' ');
-	console.log(textArr);
 	const markup = textArr
 		.map((el) => {
 			return `<span class="first__word">${el[0]}</span>${el.slice(1)}`;

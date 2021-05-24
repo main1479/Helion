@@ -35,6 +35,9 @@
 	@media only screen and (max-width: $tab-port) {
 		font-size: 4rem;
 	}
+	@media only screen and (max-width: $mbl-land) {
+		font-size: 3.5rem;
+	}
 }
 
 .fw-400 {

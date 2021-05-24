@@ -64,6 +64,31 @@
 
 	&__fullWidth {
 		padding: 1.2rem 5rem;
-		box-shadow: 0 10px 30px rgba($color-primary-light, 0.5);
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 80%;
+			height: 15px;
+			bottom: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: linear-gradient(90deg, $color-primary, $color-primary-light);
+			filter: blur(15px);
+			-webkit-filter: blur(15px);
+			transition: all 0.3s linear;
+			border-radius: 23px;
+			// opacity: 1 !important;
+			// z-index: -1;
+		}
+
+		&:hover {
+			// filter: hue-rotate(0deg);
+
+			&::after {
+				opacity: 0;
+			}
+		}
 	}
 }
