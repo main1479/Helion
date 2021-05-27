@@ -46,6 +46,10 @@
 			background: $color-heading;
 			color: #fff;
 		}
+
+		&::after{
+			display: none;
+		}
 	}
 
 	&.rounded {

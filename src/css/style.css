@@ -687,6 +687,8 @@ img.header-bg {
     .btn__secondary:hover {
       background: #303c46;
       color: #fff; }
+    .btn__secondary::after {
+      display: none; }
   .btn.rounded {
     border-radius: 100px !important; }
   .btn__allReview {
