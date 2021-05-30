@@ -4,7 +4,7 @@
 	border-top: 1px solid #c7c7c9;
 	border-bottom: 1px solid #c7c7c9;
 	&__container {
-		max-width: 1631px;
+		max-width: 100rem;
 	}
 
 	&__list {
@@ -89,25 +89,23 @@
 		}
 	}
 
+	// ==================================
+	// footer nav
+	.nav__container {
+		max-width: 1631px;
+		border-top: 1px solid #c7c7c9;
+		margin-top: 4rem;
+		padding: 3rem 1.5rem;
 
-
-   // ==================================
-   // footer nav
-   .nav__container{
-      max-width: 1631px;
-      border-top: 1px solid #c7c7c9;
-      margin-top: 4rem;
-      padding: 3rem 1.5rem;
-
-      @media only screen and (max-width: $tab-land){
-         .logo{
-            max-width: 10rem;
-         }
-      }
-      @media only screen and (max-width: $tab-port){
-         .right{
-            display: none;
-         }
-      }
-   }
+		@media only screen and (max-width: $tab-land) {
+			.logo {
+				max-width: 10rem;
+			}
+		}
+		@media only screen and (max-width: $tab-port) {
+			.right {
+				display: none;
+			}
+		}
+	}
 }

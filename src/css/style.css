@@ -575,7 +575,7 @@ img.header-bg {
   border-top: 1px solid #c7c7c9;
   border-bottom: 1px solid #c7c7c9; }
   .connect__container {
-    max-width: 1631px; }
+    max-width: 100rem; }
   .connect__list-item a {
     display: flex;
     align-items: center;
