@@ -11,7 +11,13 @@
 	}
 
 	.nav {
-		margin-bottom: 10rem;
+		// margin-bottom: 10rem;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 20;
+
 
 		@media only screen and (max-width: 1500px) {
 			.logo {

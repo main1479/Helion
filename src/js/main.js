@@ -86,13 +86,13 @@ const popupContainer = document.querySelector('.popup__container');
 // if you want to change the video just replace the url
 const videoUrl = 'https://umustsee.net/UAO1MC';
 
-const videoMarkup = `<div class="embed-responsive embed-responsive-16by9">
+const videoMarkup = `
 					<iframe
 						class="embed-responsive-item"
 						src="${videoUrl}"
 						allowfullscreen
 					></iframe>
-				</div>`;
+				`;
 
 popupTrigger.forEach((btn) => {
 	btn.addEventListener('click', function () {

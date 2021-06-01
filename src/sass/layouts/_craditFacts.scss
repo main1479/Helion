@@ -12,6 +12,15 @@
          svg{
             fill: $color-primary;
          }
+
+         a{
+            color: $color-primary;
+            white-space: nowrap;
+
+            &:hover{
+               opacity: .7;
+            }
+         }
       }
       @media only screen and (max-width:$laptop-land){
          padding-right: 0;

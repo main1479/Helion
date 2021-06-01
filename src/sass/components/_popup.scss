@@ -24,8 +24,9 @@
 		background: rgba(0, 0, 0, 0.397);
 		backdrop-filter: blur(2px);
 	}
-	&__container {
+	&__container { 
 		max-width: 114rem;
+		padding: 0;
 		position: relative;
 		z-index: 20;
 		display: none;
@@ -45,8 +46,12 @@
 		font-family: sans-serif;
 	}
 
-	.embed-responsive {
+	.embed-responsive-item {
+		border: none;
 		border-radius: 10px;
+		width: 100%;
+		height: 90vh;
+		max-height: 68rem;
 		display: none;
 	}
 
@@ -59,7 +64,7 @@
 			display: block;
 		}
 
-		.embed-responsive {
+		.embed-responsive-item {
 			display: block;
 		}
 	}
