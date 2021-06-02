@@ -119,3 +119,15 @@ subHeads.forEach((head) => {
 	head.innerHTML = '';
 	head.insertAdjacentHTML('afterbegin', markup);
 });
+
+
+// =============================
+// Click me button
+// =============================
+// const clickMe = document.querySelector('.click__me');
+
+// clickMe.addEventListener('click', function(e){
+// 	// e.preventDefault()
+// 	window.open(`https://www.facebook.com/LifeVestEnterprises`);
+// 	// window.open(`https://www.instagram.com/lifevest.enterprises`);
+// })

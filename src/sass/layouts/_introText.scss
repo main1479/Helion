@@ -1,0 +1,6 @@
+.intro__text{
+   padding-bottom: 8rem;
+   @media only screen and (max-width: $tab-port){
+      padding-bottom: 3rem;
+   }
+}

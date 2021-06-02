@@ -221,7 +221,7 @@
   color: #00b034; }
 
 .text__secondary {
-  color: #7f879e; }
+  color: #303c46; }
 
 .text__white {
   color: #fff; }
@@ -344,7 +344,7 @@ html {
 body {
   font-family: "HelveticaNowDisplay", sans-serif;
   font-size: 1.6rem;
-  color: #7f879e;
+  color: #303c46;
   line-height: 1.6;
   overflow-x: hidden; }
   @media only screen and (max-width: 62em) {
@@ -381,7 +381,10 @@ ul {
     width: 100%;
     left: 0;
     top: 0;
+    padding: 3.8rem 0;
     z-index: 20; }
+    .header .nav .logo {
+      max-width: 15rem; }
     @media only screen and (max-width: 1500px) {
       .header .nav .logo {
         max-width: 12rem; } }
@@ -450,12 +453,14 @@ img.header-bg {
   max-height: 97rem;
   z-index: -1; }
 
-.services {
-  padding-top: 8rem;
-  padding-bottom: 5rem; }
+.intro__text {
+  padding-bottom: 8rem; }
   @media only screen and (max-width: 48em) {
-    .services {
-      padding-top: 3rem; } }
+    .intro__text {
+      padding-bottom: 3rem; } }
+
+.services {
+  padding-bottom: 5rem; }
 
 .cradit-facts {
   padding-top: 8rem;

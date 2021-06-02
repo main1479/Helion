@@ -16,9 +16,12 @@
 		width: 100%;
 		left: 0;
 		top: 0;
+		padding: 3.8rem 0;
 		z-index: 20;
 
-
+		.logo {
+			max-width: 15rem;
+		}
 		@media only screen and (max-width: 1500px) {
 			.logo {
 				max-width: 12rem;
