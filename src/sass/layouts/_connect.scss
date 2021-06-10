@@ -84,6 +84,25 @@
 			}
 		}
 
+		.click__me-container{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			svg{
+				cursor: pointer;
+				width: 3rem;
+				height: 3rem;
+			}
+
+			.left__arrow{
+				transform: rotate(90deg);
+			}
+			.right__arrow{
+				transform: rotate(-90deg);
+			}
+		}
+
 		@media only screen and (max-width: 1500px) {
 			padding: 4rem;
 		}

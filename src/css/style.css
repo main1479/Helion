@@ -642,6 +642,18 @@ img.header-bg {
       @media only screen and (max-width: 64em) {
         .connect .phone__box .social__box {
           padding: 2rem; } }
+    .connect .phone__box .click__me-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .connect .phone__box .click__me-container svg {
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem; }
+      .connect .phone__box .click__me-container .left__arrow {
+        transform: rotate(90deg); }
+      .connect .phone__box .click__me-container .right__arrow {
+        transform: rotate(-90deg); }
     @media only screen and (max-width: 1500px) {
       .connect .phone__box {
         padding: 4rem; } }
@@ -727,6 +739,8 @@ img.header-bg {
       border-radius: 23px; }
     .btn__fullWidth:hover::after {
       opacity: 0; }
+    .btn__fullWidth.click__me {
+      padding: 1.2rem 5rem; }
 
 .form {
   background: #fff;

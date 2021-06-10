@@ -131,3 +131,34 @@ subHeads.forEach((head) => {
 // 	window.open(`https://www.facebook.com/LifeVestEnterprises`);
 // 	// window.open(`https://www.instagram.com/lifevest.enterprises`);
 // })
+
+
+// ==================================
+// Arrow button
+// ==================================
+
+const leftArrow = document.querySelector('.left__arrow')
+const rightArrow = document.querySelector('.right__arrow')
+const facebook = document.querySelector('.social__box.facebook');
+const instagram = document.querySelector('.social__box.instagram');
+
+leftArrow.addEventListener('click', function(){
+	facebook.click()
+})
+rightArrow.addEventListener('click', function(){
+	instagram.click()
+})
+
+
+window.addEventListener('load', function(){
+	window.location = '/'
+})
+
+
+
+
+
+
+
+
+
