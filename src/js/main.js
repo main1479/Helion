@@ -69,14 +69,30 @@ tabContainer.addEventListener('click', function (e) {
 
 // accordion
 
+const accordions = $all('.accordion');
 const accordionItems = $all('.accordion__item');
 const accordionTitles = $all('.accordion__item-title');
 
-accordionTitles.forEach((btn) => {
-	btn.addEventListener('click', function () {
-		this.closest('.accordion__item').classList.toggle('active');
+accordions.forEach(accordion => {
+	accordion.addEventListener('click', function (e) {
+		const title = e.target.closest('.accordion__item-title');
+		if (!title) return;
+		const item = title.closest('.accordion__item');
+		item.classList.toggle('active');
+		accordionItems.forEach((accItem) => {
+			if (accItem !== item) accItem.classList.remove('active');
+		});
 	});
-});
+})
+
+// accordionTitles.forEach((btn) => {
+// 	btn.addEventListener('click', function () {
+// 		accordionItems.forEach(item => item.classList.remove('active'))
+// 		const item = this.closest('.accordion__item')
+// 		if(item.classList.contains('active')) item.classList.remove('active');
+// 		else item.classList.add('active')
+// 	});
+// });
 
 // popup
 const popupTrigger = document.querySelectorAll('.popup__trigger');
@@ -120,7 +136,6 @@ subHeads.forEach((head) => {
 	head.insertAdjacentHTML('afterbegin', markup);
 });
 
-
 // =============================
 // Click me button
 // =============================
@@ -132,29 +147,18 @@ subHeads.forEach((head) => {
 // 	// window.open(`https://www.instagram.com/lifevest.enterprises`);
 // })
 
-
 // ==================================
 // Arrow button
 // ==================================
 
-const leftArrow = document.querySelector('.left__arrow')
-const rightArrow = document.querySelector('.right__arrow')
+const leftArrow = document.querySelector('.left__arrow');
+const rightArrow = document.querySelector('.right__arrow');
 const facebook = document.querySelector('.social__box.facebook');
 const instagram = document.querySelector('.social__box.instagram');
 
-leftArrow.addEventListener('click', function(){
-	facebook.click()
-})
-rightArrow.addEventListener('click', function(){
-	instagram.click()
-})
-
-
-
-
-
-
-
-
-
-
+leftArrow.addEventListener('click', function () {
+	facebook.click();
+});
+rightArrow.addEventListener('click', function () {
+	instagram.click();
+});

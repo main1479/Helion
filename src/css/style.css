@@ -366,6 +366,9 @@ p,
 ul {
   margin: 0; }
 
+#workWithUs {
+  height: 0; }
+
 .header {
   position: relative;
   min-height: 100vh;
