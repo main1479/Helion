@@ -73,7 +73,7 @@ const accordions = $all('.accordion');
 const accordionItems = $all('.accordion__item');
 const accordionTitles = $all('.accordion__item-title');
 
-accordions.forEach(accordion => {
+accordions.forEach((accordion) => {
 	accordion.addEventListener('click', function (e) {
 		const title = e.target.closest('.accordion__item-title');
 		if (!title) return;
@@ -83,7 +83,7 @@ accordions.forEach(accordion => {
 			if (accItem !== item) accItem.classList.remove('active');
 		});
 	});
-})
+});
 
 // accordionTitles.forEach((btn) => {
 // 	btn.addEventListener('click', function () {
@@ -104,6 +104,7 @@ const videoUrl = 'https://umustsee.net/UAO1MC';
 
 const videoMarkup = `
 					<iframe
+						title="popup content"
 						class="embed-responsive-item"
 						src="${videoUrl}"
 						allowfullscreen
